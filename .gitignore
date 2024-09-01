@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# remove assets
+/public/img/*
+
 # testing
 /coverage
 
