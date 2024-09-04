@@ -1,11 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 
-export default function LandingCard({clickPath, imgPath, altTxt}){
+export default function LandingCard({navPath, imgPath, altTxt}){
+
+    const nav = useNavigate();
 
     return(
-        <a href={clickPath}>
+        <button onClick={()=>{nav(navPath);}}>
             <img className="thumbnail" src={imgPath} alt={altTxt} />
-        </a>
+        </button>
     );
 };

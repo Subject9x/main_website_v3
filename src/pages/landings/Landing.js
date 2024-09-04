@@ -1,7 +1,10 @@
 import React from "react";
-import LandingCard from "../components/main/landing/LandingCard";
+import LandingCard from "../../components/main/landing/LandingCard";
+import { useNavigate } from "react-router";
 
 export default function LandingPage({props}){
+
+    const nav = useNavigate();
 
     return(
 <div className="grid-container fluid">
@@ -19,16 +22,16 @@ export default function LandingPage({props}){
             </div>
             <div className="grid-x">
                 <div className="cell auto">
-                    <LandingCard clickPath={""} imgPath={"/img/landing/codeThumb.png"} altTxt={"Code Projects"}/>
+                    <LandingCard navPath={"code"} imgPath={"/img/landing/codeThumb.png"} altTxt={"Code Projects"}/>
                 </div>
                 <div className="cell auto">
-                    <LandingCard clickPath={""} imgPath={"/img/landing/artThumb.png"} altTxt={"Artwork"}/>
+                    <LandingCard navPath={""} imgPath={"/img/landing/artThumb.png"} altTxt={"Artwork"}/>
                 </div>
                 <div className="cell auto">
-                    <LandingCard clickPath={""} imgPath={"/img/landing/tableThumb.png"} altTxt={"Board Games"}/>
+                    <LandingCard navPath={""} imgPath={"/img/landing/tableThumb.png"} altTxt={"Board Games"}/>
                 </div>
                 <div className="cell auto">
-                    <LandingCard clickPath={""} imgPath={"/img/landing/netThumb.png"} altTxt={"Networking"} />
+                    <LandingCard navPath={""} imgPath={"/img/landing/netThumb.png"} altTxt={"Networking"} />
                 </div>
             </div>
         </div>
