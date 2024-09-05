@@ -1,28 +1,40 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import ListCard from "./ListCard";
-import { useNavigate, useParams, useLocation} from "react-router";
+import {useParams} from "react-router";
 
-{/* 
+/* 
     Template Component for rendering code project pages,
     wrap with target page for easier routing.
-    */}
+ */
 export default function CodeProject({props}){
 
+    const [dataLoaded, setDataLoaded] = useState(false);
     const [projData, setProjData] = useState({});
     const {projId} = useParams();
-    let url =  useLocation();
-    
 
     useEffect(()=>{
         getProjectData();
 
-    }, [projData]);
+    }, []);
 
     async function getProjectData() {
-        const response = await fetch(url+"/dat/proj"+projId+".json");
-        const project = await response.json();
-        setProjData(project);
-      }
+        if(dataLoaded){
+            return;
+        }
+        fetch("/dat/proj/"+projId+".json", {
+            headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+                }
+        })
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(myJson) {
+            setProjData(myJson);
+            setDataLoaded(true);
+        });
+    }
 
 return(
 <div className="grid-container fluid">
@@ -31,17 +43,35 @@ return(
             <h2>{projData.title}</h2>
         </div>
     </div>
+
     <div className="grid-x">
-        <div className="cell auto small-4 medium-4 large-4 small-offset-4 medium-offset-4 large-offset-4">
-            <div className="grid-x grid-margin-x">
-                {projData.details !== undefined &&
-                    projData.details.map((entry, idx)=>(
-                        <div className="cell shrink small-4 medium-4 large-4 small-offset-1 medium-offset-1 large-offset-1">
-                            <ListCard backgroundClr={"lightgreen"} rowData={entry} />
-                        </div>
-                    ))
+        <div className="cell small-6 medium-6 large-6 small-offset-3 medium-offset-3 large-offset-3">
+            <div className="grid-x">
+                {projData.date !== undefined && 
+                    <div className="cell auto" >
+                        <h4>{projData.date}</h4>
+                    </div>  
+                }
+                {projData.subtitle !== undefined && 
+                    <div className="cell auto">
+                        <h5>{projData.subtitle}</h5>
+                    </div>  
                 }
             </div>
+        </div>
+    </div>
+    <div className="grid-x">
+        <div className="cell small-10 medium-8 large-4 small-offset-1 medium-offset-2 large-offset-4">
+                <div className="grid-x">
+                    {projData.details !== undefined &&
+                        projData.details.map((entry, idx)=>(
+                            <div className="cell shrink small-4 medium-4 large-4 small-offset-1 medium-offset-1 large-offset-1">
+                                <ListCard key={idx} backgroundClr={"lightgreen"} rowData={entry} />
+                            </div>
+                        ))
+                    }
+                </div>
+
         </div>
     </div>
     {/* Features of project*/}
@@ -66,7 +96,7 @@ return(
     {/* */}
     {projData.media !== undefined &&
         <div className="grid-x">
-            <div className="cell auto small-8 medium-8 large-8 small-offset-2 medium-offset-2 large-offset-2">
+            <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
                 <div className="grid-x grid-margin-x">
                     {projData.media.map((icon)=>(
                         <div className="cell shrink small-4 medium-4 large-4 small-offset-1 medium-offset-1 large-offset-1">
@@ -82,7 +112,8 @@ return(
     {projData.desc !== undefined &&
         projData.desc.map((row, idx)=>(
             <div key={idx} className="grid-x grid-margin-x">
-                <div className="cell auto small-8 medium-6 large-4 small-offset-2 medium-offset-3 large-offset-4">
+                
+                <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
                     <p>{row}</p>
                 </div>
             </div>
