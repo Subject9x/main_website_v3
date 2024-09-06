@@ -1,5 +1,5 @@
 import React from "react";
-import LandingCard from "../../components/main/landing/LandingCard";
+import LandingCard from "../components/main/landing/LandingCard";
 import { useNavigate } from "react-router";
 
 export default function LandingPage({props}){
@@ -25,13 +25,13 @@ export default function LandingPage({props}){
                     <LandingCard navPath={"code"} imgPath={"/img/landing/codeThumb.png"} altTxt={"Code Projects"}/>
                 </div>
                 <div className="cell auto">
-                    <LandingCard navPath={""} imgPath={"/img/landing/artThumb.png"} altTxt={"Artwork"}/>
+                    <LandingCard navPath={"artwork"} imgPath={"/img/landing/artThumb.png"} altTxt={"Artwork"}/>
                 </div>
                 <div className="cell auto">
-                    <LandingCard navPath={""} imgPath={"/img/landing/tableThumb.png"} altTxt={"Board Games"}/>
+                    <LandingCard navPath={"boardgame"} imgPath={"/img/landing/tableThumb.png"} altTxt={"Board Games"}/>
                 </div>
                 <div className="cell auto">
-                    <LandingCard navPath={""} imgPath={"/img/landing/netThumb.png"} altTxt={"Networking"} />
+                    <LandingCard navPath={"networking"} imgPath={"/img/landing/netThumb.png"} altTxt={"Networking"} />
                 </div>
             </div>
         </div>

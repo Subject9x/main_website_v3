@@ -1,6 +1,8 @@
 import React from "react";
 import {useNavigate} from "react-router";
-import ProjectCard from "../../components/main/code/ProjectCard";
+import ProjectCard from "../components/main/code/ProjectCard";
+import NavHeader from "../components/main/NavHeader";
+import BasicFooter from "../components/main/BasicFooter";
 
 export default function CodeGarage({props}){
 
@@ -12,6 +14,7 @@ export default function CodeGarage({props}){
 
     return(
 <div className="grid-container fluid">
+    <NavHeader />
     <div className="grid-x grid-margin-x">
         <div className="cell shrink small-10 medium-9 large-8 small-offset-1 medium-offset-1 large-offset-2">
             <h3 style={{fontFamily : "monospace"}}>Code Garage</h3>
@@ -33,11 +36,20 @@ export default function CodeGarage({props}){
     <div className="grid-x">
         <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
             <div className="grid-x grid-margin-x">
-                    <ProjectCard projName={"Earthsiege 2 Toolkit"} iconImg={""} navPath={"projES2RE"} clickNav={onClickProject}/>        
+                    <ProjectCard projName={"Earthsiege 2 Toolkit"} iconImg={"/img/code/proj_ES2RE.png"} navPath={"projES2RE"} clickNav={onClickProject}/>        
                     <ProjectCard projName={"Zond I"} iconImg={"/img/code/proj_zond.png"} navPath={"projZondI"} clickNav={onClickProject}/>        
             </div>
         </div>
     </div>
+    <div className="grid-x">
+        <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
+            <div className="grid-x grid-margin-x">
+                    <ProjectCard projName={"ByteRunners"} iconImg={"/img/code/proj_ByteRun.png"} navPath={"projByteRun"} clickNav={onClickProject}/>        
+                    <ProjectCard projName={"Battletech-2D"} iconImg={"/img/code/proj_bt2d.png"} navPath={"projBT2D"} clickNav={onClickProject}/>
+            </div>
+        </div>
+    </div>
+    <BasicFooter />
 </div>
     );
 };
