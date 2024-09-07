@@ -114,7 +114,7 @@ return(
                 <div className="grid-x grid-margin-x">
                     {projData.media.map((icon)=>(
                         <div className="cell shrink small-4 medium-4 large-4 small-offset-1 medium-offset-1 large-offset-1">
-                            <img className="thumbnail" src={icon} alt="projectData icon image" />
+                            <img className="thumbnail thumbnail-size" src={icon} alt="projectData icon image" />
                         </div>
                     ))}
                 </div>

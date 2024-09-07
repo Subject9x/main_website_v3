@@ -8,9 +8,11 @@ export default function ProjectCard({navPath, projName, iconImg, clickNav}){
   return(
   <div className="card" style={{width:"300px"}} onClick={(e)=>{clickNav(navPath)}}>
     <img src={iconImg} />
-    <div className="card-section" style={{textAlign:"center"}}>
-      <h5>{projName}</h5>
-    </div>
+    {(projName !== undefined && projName !== "") &&
+      <div className="card-section" style={{textAlign:"center"}}>
+        <h5>{projName}</h5>
+      </div>
+    }
   </div>
   );   
 }

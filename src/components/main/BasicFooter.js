@@ -7,7 +7,7 @@ export default function BasicFooter({props}){
 
 return(
     <div className="grid-x grid-margin-x">
-        <div className="cell auto small-8 medium-6 large-4 small-offset-2 medium-offset-3 large-offset-4">
+        <div className="cell small-11 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
             (c)2015 - {year} Peter Roohr. All rights reserved.
         </div>
     </div>

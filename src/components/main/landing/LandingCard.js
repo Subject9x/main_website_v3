@@ -8,7 +8,7 @@ export default function LandingCard({navPath, imgPath, altTxt}){
 
     return(
         <button onClick={()=>{nav(navPath);}}>
-            <img className="thumbnail" src={imgPath} alt={altTxt} />
+            <img className="thumbnail thumbnail-size" src={imgPath} alt={altTxt} />
         </button>
     );
 };

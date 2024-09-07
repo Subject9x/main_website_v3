@@ -1,0 +1,29 @@
+/*
+    Extending some Foundation-css here, copying their screen-size queries.
+*/
+
+@media print,
+screen and (max-width: 39.99875em) {
+    .thumbnail-size {
+        max-width: 100px;
+        width: 100px;
+    }
+}
+
+
+@media print,
+screen and (min-width: 40em) and (max-width: 63.99875em) {
+    .thumbnail-size {
+        max-width: 200px;
+        width: 200px;
+    }
+}
+
+
+@media print,
+screen and (min-width: 64em) and (max-width: 74.99875em) {
+    .thumbnail-size {
+        max-width: 300px;
+        width: 300px;
+    }
+}

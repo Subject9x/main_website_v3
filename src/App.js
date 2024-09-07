@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import 'foundation-sites/dist/css/foundation.min.css';
+import './orbital_ext.css';
 import Landing from './pages/Landing';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
