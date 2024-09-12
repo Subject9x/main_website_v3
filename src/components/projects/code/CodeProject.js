@@ -48,33 +48,21 @@ return(
     </div>
 
     <div className="grid-x">
-        <div className="cell small-6 medium-6 large-6 small-offset-3 medium-offset-3 large-offset-3">
-            <div className="grid-x">
-                {projData.date !== undefined && 
-                    <div className="cell auto" >
-                        <h4>{projData.date}</h4>
-                    </div>  
-                }
-                {projData.subtitle !== undefined && 
-                    <div className="cell auto">
-                        <h5>{projData.subtitle}</h5>
-                    </div>  
-                }
-            </div>
+        <div className="cell auto small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3" style={{textAlign : "center"}}>
+            <p>{projData.date !== undefined && <h4>{projData.date}</h4> }  {projData.subtitle !== undefined && <h5>{projData.subtitle}</h5>}</p>
         </div>
     </div>
     <div className="grid-x">
-        <div className="cell small-10 medium-8 large-4 small-offset-1 medium-offset-2 large-offset-4">
-                <div className="grid-x">
-                    {projData.details !== undefined &&
-                        projData.details.map((entry, idx)=>(
-                            <div className="cell shrink small-4 medium-4 large-4 small-offset-1 medium-offset-1 large-offset-1">
-                                <ListCard key={idx} backgroundClr={"lightgreen"} rowData={entry} />
-                            </div>
-                        ))
-                    }
-                </div>
-
+        <div className="cell auto small-10 medium-8 large-4 small-offset-1 medium-offset-2 large-offset-4">
+            <div className="grid-x">
+                {projData.details !== undefined &&
+                    projData.details.map((entry, idx)=>(
+                        <div className="cell shrink small-4 medium-4 large-4 small-offset-1 medium-offset-1 large-offset-1">
+                            <ListCard key={idx} backgroundClr={"lightgreen"} rowData={entry} />
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     </div>
     {/* Features of project*/}
@@ -108,19 +96,19 @@ return(
         ))
     }
     {/* */}
-    {projData.media !== undefined &&
-        <div className="grid-x">
-            <div className="cell auto small-12 medium-10 large-8 medium-offset-1 large-offset-2">
-                <div className="grid-x grid-margin-x">
+    <div className="grid-x">
+        <div className="cell auto small-12 medium-10 large-8 medium-offset-1 large-offset-2">
+            {projData.media !== undefined &&
+                <div className="grid-x featured-image-block-grid">
                     {projData.media.map((icon)=>(
-                        <div className="cell shrink small-4 medium-4 large-4 small-offset-1 medium-offset-1 large-offset-1">
-                            <img className="thumbnail thumbnail-size" src={icon} alt="projectData icon image" />
+                        <div className="grid-x featured-image-block-grid">
+                            <div className="cell shrink featured-image-block"><img className="thumbnail thumbnail-size" src={icon} alt="projectData icon image"/></div>
                         </div>
                     ))}
                 </div>
-            </div>
+            }
         </div>
-    }
+    </div>
     <BasicFooter />
 </div>
 );

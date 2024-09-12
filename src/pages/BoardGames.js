@@ -1,40 +1,35 @@
 import React from "react";
 import NavHeader from "../components/main/NavHeader";
 import BasicFooter from "../components/main/BasicFooter";
-import LandingCard from "../components/main/landing/LandingCard";
+import { useNavigate } from "react-router";
 
 
 export default function BoardGames({props}){
+
+    const nav = useNavigate();
+
     return(
 <div className="grid-container fluid">
     <NavHeader />
     <div className="grid-x grid-margin-x">
-        <div className="cell small-12 medium-10 large-8 medium-offset-1 large-offset-2">
-        This section details the many art projects I’ve undertaken across a wide selection of mediums; from concept art, 3D modeling, to painting miniatures for tabletop wargaming. Majority of my artwork is in a hobby capacity, or with the case of Concetp art; in-service to another project that I am working on.
+        <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
+            <p>Over the years I’ve worked several board game projects as a designer and co-designer. Most projects are focused around my passion of miniatures wargaming like <i>Warhammer 40k</i> and <i>Battletech</i>.</p>
         </div>
     </div>
     <div className="grid-x grid-margin-x">
-        <div className="cell small-12 medium-10 large-8 medium-offset-1 large-offset-2">
-            <table>
-                <thead></thead>
-                <tbody>
-                    <tr>
-                        <td><h5><b><u></u></b></h5></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div className="cell small-8  medium-6 large-4 small-offset-2 medium-offset-3 large-offset-4">
             <div className="grid-x grid-margin-x">
-                <div className="cell auto">
-                    <LandingCard navPath={"../art/models"} imgPath={""} altTxt={"3DArt"}/>
+                <div className="cell shrink" style={{border : "4px solid #fefefe", borderRadius: "0"}}>
+                    <h4><a href="../project/board/projLANDWARactual" ><u>LANDWAR</u></a></h4>
                 </div>
-                <div className="cell auto">
-                    <LandingCard navPath={"../art/concepts"} imgPath={""} altTxt={"Concepts"}/>
+                <div className="cell shrink" style={{border : "4px solid #fefefe", borderRadius: "0"}}>
+                    <h4><a href="../project/board/projPitFight" ><u>Pit Fight!</u></a></h4>
                 </div>
-                <div className="cell auto">
-                    <LandingCard navPath={"../art/minis"} imgPath={""} altTxt={"Minis"}/>
+                <div className="cell shrink" style={{border : "4px solid #fefefe", borderRadius: "0"}}>
+                    <h4><a href="../project/board/projBattlesuit" ><u>Battlesuit</u></a></h4>
                 </div>
-                <div className="cell auto">
-                    <LandingCard navPath={"../art/recoil"} imgPath={""} altTxt={"Recoil"} />
+                <div className="cell shrink" style={{border : "4px solid #fefefe", borderRadius: "0"}}>
+                    <h4><a href="../project/board/projMechaTTRPG" ><u>Mecha Squadron</u></a></h4>
                 </div>
             </div>
         </div>

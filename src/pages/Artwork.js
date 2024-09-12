@@ -8,8 +8,8 @@ export default function Artwork({props}){
 <div className="grid-container fluid">
     <NavHeader />
     <div className="grid-x grid-margin-x">
-        <div className="cell small-12 medium-10 large-8 medium-offset-1 large-offset-2">
-        This section details the many art projects I’ve undertaken across a wide selection of mediums; from concept art, 3D modeling, to painting miniatures for tabletop wargaming. Majority of my artwork is in a hobby capacity, or with the case of Concetp art; in-service to another project that I am working on.
+        <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
+            <p>This section details the many art projects I’ve undertaken across a wide selection of mediums; from concept art, 3D modeling, to painting miniatures for tabletop wargaming. Majority of my artwork is in a hobby capacity, or with the case of Concetp art; in-service to another project that I am working on.</p>
         </div>
     </div>
     <div className="grid-x grid-margin-x">
