@@ -1,0 +1,48 @@
+{
+	"title": "Battlesuit",
+	"subtitle": "Work-in-progress, 4-player Tactical Card-based skirmish game about flashy, power armor focused arena combat!",
+	"details": [
+		{
+			"type": "Team",
+			"data": [
+				{
+					"name": "Peter Roohr",
+					"roles": ["designer", "artist"]
+				}
+			]
+		},
+		{
+			"type": "Tools",
+			"data": [
+				{
+					"name": "GIMP",
+					"url": "https://www.gimp.org/"
+				},
+				
+				{
+					"name": "NanDeck",
+					"url": "https://www.nandeck.com/"
+				}
+			]
+		}
+	],
+	"features": [
+		"Card-driven player vs player combat.",
+		"Resource management system for each player’s battlesuit.",
+		"Drafting mechanic to build player’s set of moves.",
+		"Different power suits to choose from.",
+		"Multiple game formats for variety."
+	],
+	"desc": [
+		"-Battlesuit- (name TBD) is a my first full effort to design and implement a board game. I created the first draft of the rules back in late 2014 and have built on those rules on-and-off over the past several years. The game is inspired by both tabletop wargaming and tournament fighter video games. I loved the idea of player-customizable move sets, and the fiddly rules that come with tabletop wargaming. I wanted to capture the feeling of commanding a powerful armored suit, but also not have the game take hours to play.",
+		" the game has come a long way from those early days. I’ve learned much about how gameplay is taught, and how people react to a new game. I’ve planned a full release which will include colored graphics for the Action Cards, custom artwork for the pawn pieces, tokens, etc."
+	],
+	"media": [
+		"/img/bgs/suit/bsuit1.jpg",
+		"/img/bgs/suit/bsuit2.jpg",
+		"/img/bgs/suit/bsuit3.jpg",
+		"/img/bgs/suit/bsuit4.jpg",
+		"/img/bgs/suit/bsuit5.png",
+		"/img/bgs/suit/bsuit6.jpg"
+	]
+}

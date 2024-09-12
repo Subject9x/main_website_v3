@@ -5,7 +5,7 @@ export default function NavHeader({props}){
 
     return(
         <div className="grid-x grid-margin-x">
-            <div className="cell auto small-6 medium-6 large-6 small-offset-3 medium-offset-3 large-offset-3">
+            <div className="cell auto small-12 medium-6 large-6 medium-offset-2 large-offset-3">
                 <table>
                     <thead></thead>
                     <tbody>

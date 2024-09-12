@@ -5,8 +5,8 @@
 @media print,
 screen and (max-width: 39.99875em) {
     .thumbnail-size {
-        max-width: 100px;
-        width: 100px;
+        max-width: 150px;
+        width: 150px;
     }
 }
 
@@ -27,3 +27,36 @@ screen and (min-width: 64em) and (max-width: 74.99875em) {
         width: 300px;
     }
 }
+
+@media print,
+screen and (min-width: 74.99876em) {
+    .thumbnail-size {
+        max-width: 400px;
+        width: 400px;
+    }
+}
+
+
+.featured-image-block-grid-header {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featured-image-block {
+    margin-bottom: 20px;
+}
+
+.featured-image-block .featured-image-block-title {
+    font-weight: 600;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    color: #404040;
+}
+
+.featured-image-block a:hover p {
+    color: #1779ba;
+}
+  
+  

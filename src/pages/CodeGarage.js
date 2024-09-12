@@ -29,7 +29,7 @@ export default function CodeGarage({props}){
         <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
             <div className="grid-x grid-margin-x">
                 <ProjectCard projName={"battleMETAL"} iconImg={"/img/code/proj_battlemetal.png"} navPath={"projBattleMETAL"} clickNav={onClickProject}/>
-                <ProjectCard projName={"LANDWAR App"} iconImg={"/img/code/proj_landwar.png"} navPath={"projLANDWAR"} clickNav={onClickProject}/>        
+                <ProjectCard projName={"LANDWAR App"} iconImg={"/img/code/proj_landwar.png"} navPath={"projLANDWARapp"} clickNav={onClickProject}/>        
             </div>
         </div>
     </div>

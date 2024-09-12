@@ -21,7 +21,11 @@ export default function LandingPage({props}){
                     <h4 style={{fontFamily : "monospace"}}>Main site for all my works</h4>
                 </div>
             </div>
-            <div className="grid-x">
+        </div>
+    </div>
+    <div className="grid-x grid-margin-x">
+        <div className="cell small-12 medium-10 large-8 medium-offset-1 large-offset-3">
+            <div className="grid-x grid-margin-x">
                 <div className="cell auto">
                     <LandingCard navPath={"code"} imgPath={"/img/landing/codeThumb.png"} altTxt={"Code Projects"}/>
                 </div>
@@ -29,7 +33,7 @@ export default function LandingPage({props}){
                     <LandingCard navPath={"artwork"} imgPath={"/img/landing/artThumb.png"} altTxt={"Artwork"}/>
                 </div>
             </div>
-            <div className="grid-x">
+            <div className="grid-x grid-margin-x">
                 <div className="cell auto">
                     <LandingCard navPath={"boardgame"} imgPath={"/img/landing/tableThumb.png"} altTxt={"Board Games"}/>
                 </div>
@@ -37,9 +41,9 @@ export default function LandingPage({props}){
                     <LandingCard navPath={"networking"} imgPath={"/img/landing/netThumb.png"} altTxt={"Networking"} />
                 </div>
             </div>
-            <BasicFooter />
         </div>
     </div>
+    <BasicFooter />
 </div>
     );
 
