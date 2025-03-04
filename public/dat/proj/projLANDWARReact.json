@@ -1,1 +1,71 @@
-{"title":"LANDWAR-react","subtitle":"2D top-down, maze-running, arcade action.","url":"","thumb":"","date":"12-6-2023","details":[{"type":"Team","data":[{"name":"Peter Roohr","roles":["coder","designer","artist"]}]},{"type":"Tech","data":[{"name":"Godot 3 Game Engine","url":"https://godotengine.org/"}]},{"type":"Links","data":[{"name":"Download from itch.io","url":"https://subject9x.itch.io/byterunners"},{"name":"Gameplay video","url":"https://www.youtube.com/watch?v=zdmP2lc0EVg"}]},{"type":"Tools","data":[{"name":"Gimp","url":"https://www.gimp.org/"}]}],"features":["Top-down, 2D action shooter.","Multiple player tanks to choose from","14 hand-made maps.","Leveraged open-source sound effects and music."],"desc":["I wanted to teach myself Godot by making a small and simple 2D arcade game. I was inspired by an ancient 3D dos game from the 90s for the aesthetics. I ended up making all the tiles, backgrounds, player, and mob sprites myself including the animations..","Gameplay is derivative however, you simply collect all the gems in a level, reach the exit and move to the next before time runs out. I realized it was too simple to really be worth finishing a more full experience."],"media":["/img/code/byterun/byterun_1.png","/img/code/byterun/byterun_2.png","/img/code/byterun/byterun_3.png"]}
+{
+    "title": "LANDWAR-react",
+    "subtitle": "React-powered website version of the LANDWAR electron app.",
+    "url": "http://landwargame.net",
+    "thumb": "",
+    "date": "08-01-2024+",
+    "details": [
+        {
+            "type": "Team",
+            "data": [
+                {
+                    "name": "Peter Roohr",
+                    "roles": [
+                        "coder",
+                        "designer"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Tech",
+            "data": [
+                {
+                    "name": "React",
+                    "url": "https://react.dev/"
+                },
+                {
+                    "name": "Foundation CSS 6",
+                    "url": "https://get.foundation/"
+                },
+                {
+                    "name": "React-to-PDF"
+                }
+
+            ]
+        },
+        {
+            "type": "Links",
+            "data": [
+                {
+                    "name": "Hosted here",
+                    "url": "http://landwargame.net"
+                }
+            ]
+        },
+        {
+            "type": "Tools",
+            "data": [
+                {
+                    "name": "Visual Studio Code"
+                }
+            ]
+        }
+    ],
+    "features": [
+        "Complete Unit Builder spreadsheet system.",
+        "Unit list builder and editor.",
+        ".CSV download and upload of unit stats.",
+        ""
+    ],
+    "desc": [
+        "The electron version of this app turned out to be a bit of a non-starter. Itch.io provided metrics and analytics; the main pdf rules for LANDWAR enjoy continued interest and monthly downloads...the app did not, even offered for free. The solution was then to put the whole thing up on a website. Although the app code was essentially html/js/css, I didn't want to settle for a simple port. I had learned much more about React, ES6, and wanted a new CSS framework.",
+        "I decided to give Foundation CSS a try, as an alternative to the normal Bootstrap that most sites use/extend. Post-launch, I am mostly satisfied with Foundation but Material UI is now on my radar. For main framework I chose React, having a desire to learn a lot more about making varied websites and features. It took a bit to get into the headspace of the design, but overall I found making features to be extremely quick and simple to build up."
+    ],
+    "media": [
+        "/img/code/lwreact/lwreact_2.png",
+        "/img/code/lwreact/lwreact_3.png",
+        "/img/code/lwreact/lwreact_4.png",
+        "/img/code/lwreact/lwreact_5.png"
+    ]
+}

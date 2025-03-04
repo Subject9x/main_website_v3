@@ -25,26 +25,35 @@ export default function CodeGarage({props}){
             <p>All my independent coding projects.</p>
         </div>
     </div>
+
     <div className="grid-x">
         <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
             <div className="grid-x grid-margin-x">
-                <ProjectCard projName={"battleMETAL"} iconImg={"/img/code/proj_battlemetal.png"} navPath={"projBattleMETAL"} clickNav={onClickProject}/>
-                <ProjectCard projName={"LANDWAR App"} iconImg={"/img/code/proj_landwar.png"} navPath={"projLANDWARapp"} clickNav={onClickProject}/>        
+                <ProjectCard projName={"LANDWAR React Website"} iconImg={"/img/code/proj_landwar_react.png"} navPath={"projLANDWARReact"} clickNav={onClickProject}/>   
+                <ProjectCard projName={"battleMETAL"} iconImg={"/img/code/proj_battlemetal.png"} navPath={"projBattleMETAL"} clickNav={onClickProject}/>  
+            </div>
+        </div>
+    </div>
+
+    <div className="grid-x">
+        <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
+            <div className="grid-x grid-margin-x">
+                <ProjectCard projName={"Earthsiege 2 Toolkit"} iconImg={"/img/code/proj_ES2RE.png"} navPath={"projES2RE"} clickNav={onClickProject}/>   
+                <ProjectCard projName={"LANDWAR App"} iconImg={"/img/code/proj_landwar.png"} navPath={"projLANDWARapp"} clickNav={onClickProject}/>             
             </div>
         </div>
     </div>
     <div className="grid-x">
         <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
-            <div className="grid-x grid-margin-x">
-                <ProjectCard projName={"Earthsiege 2 Toolkit"} iconImg={"/img/code/proj_ES2RE.png"} navPath={"projES2RE"} clickNav={onClickProject}/>        
-                <ProjectCard projName={"ByteRunners"} iconImg={"/img/code/proj_ByteRun.png"} navPath={"projByteRun"} clickNav={onClickProject}/>            
-            </div>
-        </div>
-    </div>
-    <div className="grid-x">
-        <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
-            <div className="grid-x grid-margin-x">
+            <div className="grid-x grid-margin-x">        
+            <ProjectCard projName={"ByteRunners"} iconImg={"/img/code/proj_ByteRun.png"} navPath={"projByteRun"} clickNav={onClickProject}/>  
                 <ProjectCard projName={"Zond I"} iconImg={"/img/code/proj_zond.png"} navPath={"projZondI"} clickNav={onClickProject}/>        
+            </div>
+        </div>
+    </div>
+    <div className="grid-x">
+        <div className="cell small-10 medium-8 large-6 small-offset-1 medium-offset-2 large-offset-3">
+            <div className="grid-x grid-margin-x">        
                 <ProjectCard projName={"Battletech-2D"} iconImg={"/img/code/proj_bt2d.png"} navPath={"projBT2D"} clickNav={onClickProject}/>
             </div>
         </div>
